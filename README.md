@@ -1,21 +1,31 @@
 GoIraq Web Application
 GoIraq is a full-stack web application for digitally preserving and sharing Iraqi cultural heritage. It aims to bridge the cultural disconnect between younger generations and Iraqi heritage through interactive geographical exploration, cultural traditions presentation, gamified learning, and user engagement systems. Developed as part of a BSc Computer Science dissertation at Brunel University London.
-Features
+
+Features:
 
 Interactive map interface showcasing 20 significant historical and cultural sites across Iraq
+
 Six structured categories of cultural traditions with responsive design
+
 Three-tiered quiz system with database integration for scoring and leaderboard functionality
+
 Comprehensive support infrastructure for user engagement and feedback collection
 
 Requirements
 This project requires the following:
 
 Node.js
+
 npm
+
 Next.js
+
 MongoDB
+
 Leaflet API
+
 Tailwind CSS
+
 
 Setup + Installation
 Environment
