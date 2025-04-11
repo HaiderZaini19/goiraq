@@ -77,5 +77,4 @@ Configure environment variables on your hosting platform.
 Connect your repository to the hosting platform.
 Deploy following the platform-specific instructions.
 
-Other
-This is part of a BSc Computer Science dissertation project at Brunel University London supervised by Dr. Sarath Dantu.
+
