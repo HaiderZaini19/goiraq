@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { Dancing_Script } from 'next/font/google';
 import Navbar from '@/app/components/Navbar';
-import L from 'leaflet';
 
 const dancing = Dancing_Script({ subsets: ['latin'] });
 
