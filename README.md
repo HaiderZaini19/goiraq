@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+GoIraq Web Application
+GoIraq is a full-stack web application for digitally preserving and sharing Iraqi cultural heritage. It aims to bridge the cultural disconnect between younger generations and Iraqi heritage through interactive geographical exploration, cultural traditions presentation, gamified learning, and user engagement systems. Developed as part of a BSc Computer Science dissertation at Brunel University London.
+Features
 
-## Getting Started
+Interactive map interface showcasing 20 significant historical and cultural sites across Iraq
+Six structured categories of cultural traditions with responsive design
+Three-tiered quiz system with database integration for scoring and leaderboard functionality
+Comprehensive support infrastructure for user engagement and feedback collection
 
-First, run the development server:
+Requirements
+This project requires the following:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Node.js
+npm
+Next.js
+MongoDB
+Leaflet API
+Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Setup + Installation
+Environment
+Set the following environment variables. Adjust them as needed for your use case.
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/goiraq
+NEXT_PUBLIC_MAP_API_KEY=your_leaflet_api_key
+Main
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+In the project directory, run npm install to install all the required packages.
+Run npm run dev to start the development server. The application should be accessible at http://localhost:3000/
+For production build, run npm run build followed by npm start.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Project Structure
 
-## Learn More
+/pages - Next.js page components and API routes
+/components - Reusable UI components
+/public - Static assets including images of historical sites
+/data - JSON files containing cultural content and site information
+/styles - Global styles and Tailwind configuration
 
-To learn more about Next.js, take a look at the following resources:
+Features Implementation
+Map Interface
+The interactive map utilizes Leaflet API for geographical exploration of historical sites. Custom markers with thumbnail previews provide an engaging user experience.
+Cultural Traditions
+Six thematic categories (Traditional Customs, Food & Cuisine, Music & Dance, Art & Crafts, Festivals & Celebrations, and Traditional Clothing) offer structured exploration of Iraqi cultural heritage.
+Quiz System
+Multi-level quiz system (Beginner, Intermediate, Advanced) across two categories (Iraqi History and Iraqi Culture) with MongoDB integration for score tracking and leaderboard functionality.
+Support Infrastructure
+Comprehensive contact form with request categorization and tracking capabilities to enhance user engagement and feedback collection.
+Development Methodology
+This project was developed using an Agile methodology with two-week sprints:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sprints 1-2: Core Infrastructure and Map Interface
+Sprints 3-4: Cultural Content and Traditions Sections
+Sprints 5-6: Quiz System and Leaderboard
+Sprints 7-8: Support Infrastructure and Refinement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Testing
+To run tests:
 
-## Deploy on Vercel
+Go to the project directory.
+Run npm test to execute all tests.
+For component-specific tests, run npm test -- -t "ComponentName".
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment
+The application can be deployed to Vercel or any hosting platform that supports Next.js applications:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Configure environment variables on your hosting platform.
+Connect your repository to the hosting platform.
+Deploy following the platform-specific instructions.
+
+Other
+This is part of a BSc Computer Science dissertation project at Brunel University London supervised by Dr. Sarath Dantu.
